@@ -1,0 +1,47 @@
+<!DOCTYPE kpartgui>
+<effect tag="frei0r.cvc0rners" id="frei0r.cvc0rners">
+	<name>CVc0rners</name>
+	<description>opencv c0rners</description>
+	<author>RG</author>
+	<parameter type="simplekeyframe" widget="corners" name="x1" default="2000" min="0" max="6000" factor="6000">
+		<name>top left X</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="y1" default="2000" min="0" max="6000" factor="6000">
+		<name>top left Y</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="x2" default="4000" min="0" max="6000" factor="6000">
+		<name>top right X</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="y2" default="2000" min="0" max="6000" factor="6000">
+		<name>top right Y</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="x3" default="4000" min="0" max="6000" factor="6000">
+		<name>bottom right X</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="y3" default="4000" min="0" max="6000" factor="6000">
+		<name>bottom right Y</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="x4" default="2000" min="0" max="6000" factor="6000">
+		<name>bottom left X</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="y4" default="4000" min="0" max="6000" factor="6000">
+		<name>bottom left Y</name>
+	</parameter>
+
+        <parameter type="list" name="Smooth" default="0.25" paramlist="0.0;0.25;0.50;0.75;1.0">
+                <paramlistdisplay>INTER_NEAREST,INTER_LINEAR,INTER_AREA,INTER_CUBIC,INTER_LANCZOS4</paramlistdisplay>
+		<name>Smoothing method</name>
+	</parameter>
+
+        <parameter type="bool" name="Static" default="0">
+                <name>Static overlay (single image)</name>
+        </parameter>        
+
+</effect>
