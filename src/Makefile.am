@@ -18,6 +18,7 @@ plugin_LTLIBRARIES = \
 	alphagrad.la \
 	alphain.la \
 	alphainjection.la \
+	alphamatte.la \
 	alphaout.la \
 	alphaover.la \
 	alphaspot.la \
@@ -165,6 +166,22 @@ facedetect_la_SOURCES = filter/facedetect/facedetect.cpp
 facedetect_la_CFLAGS = @OPENCV_CFLAGS@ @CFLAGS@
 facedetect_la_CXXFLAGS = @OPENCV_CFLAGS@ @CXXFLAGS@
 facedetect_la_LIBADD = @OPENCV_LIBS@
+plugin_LTLIBRARIES += cvc0rners.la
+cvc0rners_la_SOURCES = filter/cvc0rners/cvc0rners.cpp
+cvc0rners_la_CPPFLAGS = @OPENCV_CFLAGS@ @CFLAGS@
+cvc0rners_la_LIBADD = @OPENCV_LIBS@
+plugin_LTLIBRARIES += cvemboss.la
+cvemboss_la_SOURCES = filter/cvemboss/cvemboss.cpp
+cvemboss_la_CFLAGS = @OPENCV_CFLAGS@ @CFLAGS@
+cvemboss_la_LIBADD = @OPENCV_LIBS@
+plugin_LTLIBRARIES += perlin.la
+perlin_la_SOURCES = filter/perlin/perlin.cpp
+perlin_la_CFLAGS = @OPENCV_CFLAGS@ @CFLAGS@
+perlin_la_LIBADD = @OPENCV_LIBS@
+plugin_LTLIBRARIES += cropNwarp.la
+cropNwarp_la_SOURCES = filter/cropNwarp/cropNwarp.cpp
+cropNwarp_la_CPPFLAGS = @OPENCV_CFLAGS@ @CFLAGS@
+cropNwarp_la_LIBADD = @OPENCV_LIBS@
 endif
 
 if HAVE_CAIRO
@@ -304,6 +321,7 @@ addition_la_SOURCES = mixer2/addition/addition.cpp
 addition_alpha_la_SOURCES = mixer2/addition_alpha/addition_alpha.cpp
 alphaatop_la_SOURCES = mixer2/alphaatop/alphaatop.cpp
 alphainjection_la_SOURCES = mixer2/alphainjection/alphainjection.c
+alphamatte_la_SOURCES = mixer2/alphamatte/alphamatte.cpp
 alphain_la_SOURCES = mixer2/alphain/alphain.cpp
 alphaout_la_SOURCES = mixer2/alphaout/alphaout.cpp
 alphaover_la_SOURCES = mixer2/alphaover/alphaover.cpp
