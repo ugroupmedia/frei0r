@@ -1,0 +1,76 @@
+<!DOCTYPE kpartgui>
+<effect LC_NUMERIC="C" tag="frei0r.cropNwarp" id="frei0r.cropNwarp">
+	<name>cropNwarp</name>
+	<description>opencv c0rners2 with crop</description>
+	<author>RG</author>
+
+	<parameter type="simplekeyframe" widget="corners" name="x1" default="2000" min="0" max="6000" factor="6000">
+		<name>top left X</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="y1" default="2000" min="0" max="6000" factor="6000">
+		<name>top left Y</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="x2" default="4000" min="0" max="6000" factor="6000">
+		<name>top right X</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="y2" default="2000" min="0" max="6000" factor="6000">
+		<name>top right Y</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="x3" default="4000" min="0" max="6000" factor="6000">
+		<name>bottom right X</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="y3" default="4000" min="0" max="6000" factor="6000">
+		<name>bottom right Y</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="x4" default="2000" min="0" max="6000" factor="6000">
+		<name>bottom left X</name>
+	</parameter>
+	
+        <parameter type="simplekeyframe" widget="corners" name="y4" default="4000" min="0" max="6000" factor="6000">
+		<name>bottom left Y</name>
+	</parameter>
+
+        <parameter type="list" name="Smooth" default="0.25" paramlist="0.0,0.25,0.50,0.75,1.0">
+                <paramlistdisplay>INTER_NEAREST,INTER_LINEAR,INTER_AREA,INTER_CUBIC,INTER_LANCZOS4</paramlistdisplay>
+		<name>Smoothing method</name>
+	</parameter>
+
+	<parameter type="constant" name="left" default="100" min="0" max="2000" factor="2000">
+		<name>Left</name>
+	</parameter>
+	<parameter type="constant" name="top" default="100" min="0" max="2000" factor="2000">
+		<name>Top</name>
+	</parameter>
+
+	<parameter type="constant" name="right" default="1900" min="0" max="2000" factor="2000">
+		<name>Right</name>
+	</parameter>
+
+	<parameter type="constant" name="bottom" default="1900" min="0" max="2000" factor="2000">
+		<name>Bottom</name>
+	</parameter>
+
+
+        <parameter type="bool" name="Warp" min="0" max="1" default="0">
+                <name>Activate Warp</name>
+        </parameter>        
+
+        <parameter type="bool" name="Static" min="0" max="1" default="1">
+                <name>input is a static PNG</name>
+        </parameter>        
+
+        <parameter type="constant" name="Feather" default="0"  min="0" max="100" factor="100">
+                <name>edge smoothing strength</name>
+        </parameter>        
+
+        <parameter type="constant" name="cropNwarpID" min="0" max="10" default="0">
+                <name>Unique Identifier</name>
+        </parameter>        
+
+</effect>

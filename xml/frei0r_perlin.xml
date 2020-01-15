@@ -1,0 +1,18 @@
+<!DOCTYPE kpartgui>
+<effect LC_NUMERIC="C" tag="frei0r.perlin" id="frei0r.perlin">
+	<name>Perlin</name>
+	<description>Perlin noise generator</description>
+	<author>RG (UGM)</author>
+
+	<parameter type="constant" name="Frequency" default="8" min="1" max="64">
+		<name>Frequency</name>
+	</parameter>
+	
+        <parameter type="constant" name="Depth" default="8" min="1" max="16">
+		<name>Depth</name>
+	</parameter>
+	
+        <parameter type="constant" name="Amplitude" default="50" min="0" max="100">
+		<name>Amplitude</name>
+	</parameter>
+</effect>
