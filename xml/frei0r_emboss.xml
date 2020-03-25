@@ -3,13 +3,13 @@
   <name>Emboss</name>
         <description>Emboss the image</description>
         <author>RG</author>
-  <parameter type="constant" name="0" default="37" min="0" max="360" factor="360">
+  <parameter type="constant" name="0" default="37" min="0" max="360" factor="1">
     <name>amount of azimuth</name>
   </parameter>
-  <parameter type="constant" name="1" default="33" min="0" max="90" factor="90">
+  <parameter type="constant" name="1" default="33" min="0" max="90" factor="1">
     <name>amount of elevation</name>
   </parameter>
-  <parameter type="constant" name="2" default="25" min="0" max="40" factor="40">
+  <parameter type="constant" name="2" default="25" min="0" max="40" factor="1">
     <name>amount of width45</name>
   </parameter>
 </effect>
