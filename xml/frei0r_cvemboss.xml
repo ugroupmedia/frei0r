@@ -3,17 +3,17 @@
 	<name>cvEmboss</name>
         <description>Emboss the image (in color)</description>
         <author>RG</author>
-	<parameter type="constant" name="Azimuth" default="135" min="0" max="360" factor="360">
+	<parameter type="constant" name="Azimuth" default="135" min="0" max="360" factor="1">
 		<name>angle of azimuth</name>
 	</parameter>
-	<parameter type="constant" name="Elevation" default="28" min="0" max="90" factor="90">
+	<parameter type="constant" name="Elevation" default="28" min="0" max="90" factor="1">
 		<name>angle of elevation</name>
 	</parameter>
-	<parameter type="constant" name="Width45" default="10" min="1" max="40" factor="40">
+	<parameter type="constant" name="Width45" default="10" min="1" max="40" factor="1">
 		<name>amount of width45</name>
 	</parameter>
 
-	<parameter type="constant" name="Strength" default="100" min="0" max="100" factor="100">
+	<parameter type="constant" name="Strength" default="100" min="0" max="100" factor="1">
 		<name>strength</name>
 	</parameter>
 
