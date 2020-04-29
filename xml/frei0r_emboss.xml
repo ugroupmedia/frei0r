@@ -1,15 +1,15 @@
 <!DOCTYPE kpartgui>
-<effect  tag="frei0r.emboss" id="frei0r.emboss">
+<effect LC_NUMERIC="C" tag="frei0r.emboss" id="frei0r.emboss">
   <name>Emboss</name>
         <description>Emboss the image</description>
         <author>RG</author>
-  <parameter type="constant" name="0" default="37" min="0" max="360" factor="1">
+  <parameter type="constant" name="0" default="0.375" min="0" max="360" factor="360">
     <name>amount of azimuth</name>
   </parameter>
-  <parameter type="constant" name="1" default="33" min="0" max="90" factor="1">
+  <parameter type="constant" name="1" default="0.33" min="0" max="90" factor="90">
     <name>amount of elevation</name>
   </parameter>
-  <parameter type="constant" name="2" default="25" min="0" max="40" factor="1">
+  <parameter type="constant" name="2" default="0.25" min="0" max="40" factor="40">
     <name>amount of width45</name>
   </parameter>
 </effect>
