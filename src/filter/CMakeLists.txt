@@ -4,11 +4,6 @@ if (${GAVL_FOUND})
     add_subdirectory (vectorscope)
 endif (${GAVL_FOUND})
 
-if (${OpenCV_FOUND})
-    add_subdirectory (facebl0r)
-    add_subdirectory (facedetect)
-endif (${OpenCV_FOUND})
-
 if (${Cairo_FOUND})
   add_subdirectory (cairoimagegrid)
   add_subdirectory (cairogradient)
