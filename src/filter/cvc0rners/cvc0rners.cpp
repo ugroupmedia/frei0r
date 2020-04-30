@@ -41,8 +41,9 @@
 // pow() and other mathematical functions
 //#include <cmath>
 
-#include <opencv/cv.hpp>
-//#include <opencv/highgui.h>
+#include <opencv2/opencv.hpp>
+
+//#include <opencv2/highgui/highgui.hpp>
 //#include <opencv2/core/core.hpp>
 //#include <opencv2/imgproc/imgproc.hpp>
 //#include <opencv2/highgui/highgui.hpp>
@@ -103,8 +104,8 @@ public:
         register_param(smooth, "Smooth", "smoothing method");
 
         lambda = Mat( 2, 4, CV_32FC1 );
-	input = Mat(cvSize(width,height), CV_8UC4);
-	output = Mat(cvSize(width,height), CV_8UC4);
+	//input = Mat(Size(W, H), CV_8UC4);
+	//output = Mat(Size(width,height), CV_8UC4);
 #if 1        
         sourceQuad[0] = Point2f( 0.0, 0.0 );
         sourceQuad[1] = Point2f( (float) maxx, 0.0);
@@ -148,13 +149,12 @@ public:
         
         int index;
 
-	input.data = (uchar *) in; 
-	output.data = (uchar *) out; 
-       
-	output.setTo(0);
 
 	if( FIRST ) // do full process (but store lambda, input and output data)
 	{
+		input = Mat(Size(W,H), CV_8UC4, (unsigned char *) in, W*4);
+		output = Mat(Size(W,H), CV_8UC4, (unsigned char *) out, W*4);
+
                 index = (int) round(smooth * 4.0);
                 if(index < 0 || index > 4)
                     index=0;
@@ -193,6 +193,10 @@ public:
 		return;
 	}
 
+	input.data = (uchar *) in; 
+	output.data = (uchar *) out; 
+       
+	output.setTo(0);
 	if( smooth != SMOOTH ) // change of method in UI
 	{
                 index = (int) round(smooth * 4.0);
