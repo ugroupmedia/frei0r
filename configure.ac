@@ -94,7 +94,7 @@ AC_FUNC_MALLOC
 AC_CHECK_FUNCS([floor memset pow sqrt])
 
 HAVE_OPENCV=false
-PKG_CHECK_MODULES(OPENCV, opencv >= 1.0.0, [HAVE_OPENCV=true], [true])
+PKG_CHECK_MODULES(OPENCV, opencv4 >= 1.0.0, [HAVE_OPENCV=true], [true])
 AM_CONDITIONAL([HAVE_OPENCV], [test x$HAVE_OPENCV = xtrue])
 if test x$HAVE_OPENCV = xtrue; then
 #    OPENCV_CFLAGS="$OPENCV_CFLAGS -DOPENCV_PREFIX=`pkg-config opencv --variable=prefix`"
