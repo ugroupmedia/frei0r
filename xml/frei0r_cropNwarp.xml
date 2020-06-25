@@ -36,7 +36,7 @@
 		<name>bottom left Y</name>
 	</parameter>
 
-        <parameter type="list" name="8" default="0.25" paramlist="0.0,0.25,0.50,0.75,1.0">
+        <parameter type="list" name="8" default="0.25" paramlist="0.0;0.25;0.50;0.75;1.0">
                 <paramlistdisplay>INTER_NEAREST,INTER_LINEAR,INTER_AREA,INTER_CUBIC,INTER_LANCZOS4</paramlistdisplay>
 		<name>Smoothing method</name>
 	</parameter>
