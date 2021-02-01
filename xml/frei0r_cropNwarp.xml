@@ -4,35 +4,35 @@
 	<description>opencv c0rners2 with crop</description>
 	<author>RG</author>
 
-	<parameter type="simplekeyframe" widget="corners" name="0" default="0.333333333333333" min="0" max="6000" factor="6000">
+	<parameter type="animated" widget="corners" name="0" default="0.333333333333333" min="0" max="6000" factor="6000">
 		<name>top left X</name>
 	</parameter>
 	
-        <parameter type="simplekeyframe" widget="corners" name="1" default="0.333333333333333" min="0" max="6000" factor="6000">
+        <parameter type="animated" widget="corners" name="1" default="0.333333333333333" min="0" max="6000" factor="6000">
 		<name>top left Y</name>
 	</parameter>
 	
-        <parameter type="simplekeyframe" widget="corners" name="2" default="0.666666666666667" min="0" max="6000" factor="6000">
+        <parameter type="animated" widget="corners" name="2" default="0.666666666666667" min="0" max="6000" factor="6000">
 		<name>top right X</name>
 	</parameter>
 	
-        <parameter type="simplekeyframe" widget="corners" name="3" default="0.333333333333333" min="0" max="6000" factor="6000">
+        <parameter type="animated" widget="corners" name="3" default="0.333333333333333" min="0" max="6000" factor="6000">
 		<name>top right Y</name>
 	</parameter>
 	
-        <parameter type="simplekeyframe" widget="corners" name="4" default="0.666666666666667" min="0" max="6000" factor="6000">
+        <parameter type="animated" widget="corners" name="4" default="0.666666666666667" min="0" max="6000" factor="6000">
 		<name>bottom right X</name>
 	</parameter>
 	
-        <parameter type="simplekeyframe" widget="corners" name="5" default="0.666666666666667" min="0" max="6000" factor="6000">
+        <parameter type="animated" widget="corners" name="5" default="0.666666666666667" min="0" max="6000" factor="6000">
 		<name>bottom right Y</name>
 	</parameter>
 	
-        <parameter type="simplekeyframe" widget="corners" name="6" default="0.333333333333333" min="0" max="6000" factor="6000">
+        <parameter type="animated" widget="corners" name="6" default="0.333333333333333" min="0" max="6000" factor="6000">
 		<name>bottom left X</name>
 	</parameter>
 	
-        <parameter type="simplekeyframe" widget="corners" name="7" default="0.666666666666667" min="0" max="6000" factor="6000">
+        <parameter type="animated" widget="corners" name="7" default="0.666666666666667" min="0" max="6000" factor="6000">
 		<name>bottom left Y</name>
 	</parameter>
 
@@ -69,7 +69,7 @@
                 <name>edge smoothing strength</name>
         </parameter>        
 
-        <parameter type="constant" name="17" min="0" max="10" default="0">
+        <parameter type="constant" name="16" min="0" max="100" default="0">
                 <name>Unique Identifier</name>
         </parameter>        
 
